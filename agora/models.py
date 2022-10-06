@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 class Advocates(models.Model):
     name = models.CharField(max_length=100)
-    profile_pic = models.ImageField(upload_to='advocates/')
+    profile_pic = models.ImageField(upload_to='media/advocates/')
     short_bio = models.TextField(max_length=500)
     long_bio = models.TextField(max_length=1000)
     advocate_years_exp = models.IntegerField()
@@ -15,6 +15,6 @@ class Advocates(models.Model):
 
 class Companies(models.Model):
     name = models.CharField(max_length=100)
-    logo = models.ImageField(upload_to='companies/')
+    logo = models.ImageField(upload_to='media/companies/')
     summary = models.TextField(max_length=500)
     advocates = models.ForeignKey('Advocates', on_delete=models.CASCADE, related_name='companies')

@@ -3,6 +3,7 @@ activate.bat
 MyTrainedModel
 .idea/
 media
+media/
 */migrations
 nohup.out
 profile_images
