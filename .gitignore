@@ -8,6 +8,8 @@ media/
 nohup.out
 profile_images
 static
+staticfiles
+staticfiles/
 
 ### OSX ###
 .DS_Store
