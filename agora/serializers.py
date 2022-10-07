@@ -20,7 +20,7 @@ class RetrieveAdvocatesSerializer(serializers.ModelSerializer):
             'id': company_data[0]['id'],
             'name': company_data[0]['name'],
             'logo': company_data[0]['logo'],
-            'href': 'http://127.0.0.1:8000/companies/' + str(company_data[0]['id']) + '/'
+            'href': 'http://web-production-2772.up.railway.app/companies/' + str(company_data[0]['id']) + '/'
         }
         data['links'] = {
             'youtube': instance.youtube,
