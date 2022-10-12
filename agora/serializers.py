@@ -1,6 +1,6 @@
 from rest_framework import serializers
+from hackathon.settings import BASE_URL
 from .models import Companies, Advocates
-from django.urls import reverse
 
 
 class AdvocatesSerializer(serializers.ModelSerializer):
@@ -21,8 +21,7 @@ class RetrieveAdvocatesSerializer(serializers.ModelSerializer):
             'id': company_data[0]['id'],
             'name': company_data[0]['name'],
             'logo': company_data[0]['logo'],
-            # 'href': 'http://web-production-2772.up.railway.app/companies/' + str(company_data[0]['id']) + '/'
-            'href': reverse('companies-detail', args=[company_data[0]['id']])
+            'href': BASE_URL + '/companies/' + str(company_data[0]['id']) + '/'
         }
         data['links'] = {
             'youtube': instance.youtube,

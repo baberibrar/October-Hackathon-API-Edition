@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG')
 
 ALLOWED_HOSTS = ["*"]
-
+BASE_URL = "https://web-production-3340.up.railway.app"
 
 # Application definition
 
