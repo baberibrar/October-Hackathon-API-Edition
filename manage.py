@@ -4,6 +4,7 @@ import os
 import sys
 import re
 
+
 def read_env():
     """Pulled from Honcho code with minor updates, reads local default
     environment variables from a .env file located in the project root
@@ -27,12 +28,10 @@ def read_env():
             os.environ.setdefault(key, val)
 
 
-
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hackathon.settings')
 
     from django.core.management import execute_from_command_line
+
     read_env()
     execute_from_command_line(sys.argv)
-
-

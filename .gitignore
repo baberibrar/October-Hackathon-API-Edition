@@ -101,3 +101,5 @@ venv
 
 .vscode
 
+db.sqlite3
+
