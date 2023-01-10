@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-3$+_q1_d!wjjg(wy%(%tq=jk24awern%vi=ns9ry(=2wx+=in0
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-BASE_URL = "https://web-production-3340.up.railway.app"
+BASE_URL = "13.231.146.68"
 
 # Application definition
 
